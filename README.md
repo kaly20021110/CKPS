@@ -86,7 +86,7 @@ ssh-keygen -f ~/.ssh/Aliyun
 
 **3. Configure the testbed**
 
-The file [settings.json](https://github.com/asonnino/hotstuff/blob/main/benchmark/settings.json) located in [CKPS/benchmark](https://github.com/kaly20021110/CKPS/benchmark) contains all the configuration parameters of the testbed to deploy. Its content looks as follows:
+The file [settings.json](https://github.com/kaly20021110/CKPS/blob/main/benchmark/settings.json) located in [CKPS/benchmark](https://github.com/kaly20021110/CKPS/blob/main/benchmark) contains all the configuration parameters of the testbed to deploy. Its content looks as follows:
 
 ```json
 {
@@ -146,9 +146,9 @@ The the last block (`instances`) specifies the[Aliyun Instance Type](https://hel
 
 **4. Create a testbed**
 
-The Aliyun instances are orchestrated with [Fabric](http://www.fabfile.org/) from the file [fabfile.py](https://github.com/ac-dcz/BFT-MVBA/blob/main/benchmark/fabfile.py) (located in [BFT-MVBA/benchmark](https://github.com/ac-dcz/BFT-MVBA/tree/main/benchmark)) you can list all possible commands as follows:
+The Aliyun instances are orchestrated with [Fabric](http://www.fabfile.org/) from the file [fabfile.py](https://github.com/kaly20021110/CKPS/blob/main/benchmark/fabfile.py) (located in [CKPS/benchmark](https://github.com/kaly20021110/CKPS/tree/main/benchmark)) you can list all possible commands as follows:
 
-The command `fab create` creates new Aliyun instances; open [fabfile.py](https://github.com/ac-dcz/BFT-MVBA/blob/main/benchmark/fabfile.py) and locate the `create` task:
+The command `fab create` creates new Aliyun instances; open [fabfile.py](https://github.com/kaly20021110/CKPS/blob/main/benchmark/fabfile.py) and locate the `create` task:
 
 ```python
 @task
@@ -186,3 +186,7 @@ $ fab uploadexec
 ```shell
 $ fab remote
 ```
+
+
+## License
+This software is licensed as [Apache 2.0](https://github.com/kaly20021110/CKPS/blob/main/LICENSE)
