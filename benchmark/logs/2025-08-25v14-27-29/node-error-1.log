@@ -1,2 +1,0 @@
-[ERROR] 2025/08/25 14:27:31.749361 node.go:54: json: cannot unmarshal array into Go struct field Parameters.pool.rate of type int
-[ERROR] 2025/08/25 14:27:31.749462 main.go:83: json: cannot unmarshal array into Go struct field Parameters.pool.rate of type int

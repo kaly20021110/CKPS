@@ -1,8 +1,0 @@
-[ERROR] 2025/08/25 14:33:07.461067 core.go:253: proposal 1 checkreferrence error and try to retriver Author 1 Epoch 173 lenof Reference 5
-[ERROR] 2025/08/25 14:33:07.471751 synchronizer.go:132: successfully get the ask block
-[ERROR] 2025/08/25 14:33:10.356860 core.go:253: proposal 1 checkreferrence error and try to retriver Author 0 Epoch 190 lenof Reference 13
-[ERROR] 2025/08/25 14:33:10.406773 synchronizer.go:132: successfully get the ask block
-[ERROR] 2025/08/25 14:33:10.719218 core.go:253: proposal 1 checkreferrence error and try to retriver Author 0 Epoch 191 lenof Reference 16
-[ERROR] 2025/08/25 14:33:10.728259 synchronizer.go:132: successfully get the ask block
-[ERROR] 2025/08/25 14:33:12.916284 core.go:253: proposal 1 checkreferrence error and try to retriver Author 3 Epoch 204 lenof Reference 10
-[ERROR] 2025/08/25 14:33:12.935304 synchronizer.go:132: successfully get the ask block

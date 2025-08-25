@@ -1,13 +1,11 @@
-## BFT-MVBA
+## CKPS
 
 ![build status](https://img.shields.io/github/actions/workflow/status/asonnino/hotstuff/rust.yml?style=flat-square&logo=GitHub&logoColor=white&link=https%3A%2F%2Fgithub.com%2Fasonnino%2Fhotstuff%2Factions)
 [![golang](https://img.shields.io/badge/golang-1.21.1-blue?style=flat-square&logo=golang)](https://www.rust-lang.org)
 [![python](https://img.shields.io/badge/python-3.9-blue?style=flat-square&logo=python&logoColor=white)](https://www.python.org/downloads/release/python-390/)
 [![license](https://img.shields.io/badge/license-Apache-blue.svg?style=flat-square)](LICENSE)
 
-This repo provides a minimal implementation of the various mvba consensus protocol. The codebase has been designed to be small, efficient, and easy to benchmark and modify. It has not been designed to run in production but uses real cryptography (kyber), networking(native), and storage (nutsdb).
-
-Say something about bft-mvba...
+This repo provides a minimal implementation of the CKPS protocol. The codebase has been designed to be small, efficient, and easy to benchmark and modify. It has not been designed to run in production but uses real cryptography (kyber), networking(native), and storage (nutsdb).
 
 ## Quick Start
 
@@ -30,13 +28,16 @@ This command may take a long time the first time you run it (compiling golang co
 
 - [CKPS01-MVBA](https://eprint.iacr.org/2001/006)
 ```
+Starting local benchmark
 Setting up testbed...
-Running mvba
+Running sMVBA
 0 byzantine nodes
 tx_size 256 byte, batch_size 512, rate 5000 tx/s
 DDOS attack False
 Waiting for the nodes to synchronize...
 Running benchmark (40 sec)...
+start at 2025-08-25 17:56:41
+stop at 2025-08-25 17:57:20
 Parsing logs...
 
 -----------------------------------------
@@ -50,14 +51,14 @@ Parsing logs...
  Transaction size: 256 B
  Batch size: 512 tx/Batch
  Faults: 0 nodes
- Execution time: 40 s
+ Execution time: 39 s
 
  + RESULTS:
- Consensus TPS: 18,666 tx/s
- Consensus latency: 131 ms
+ Consensus TPS: 19,099 tx/s
+ Consensus latency: 106 ms
 
- End-to-end TPS: 18,733 tx/s
- End-to-end latency: 232 ms
+ End-to-end TPS: 19,157 tx/s
+ End-to-end latency: 182 ms
 -----------------------------------------
 ```
 
@@ -90,12 +91,13 @@ The file [settings.json](https://github.com/asonnino/hotstuff/blob/main/benchmar
 ```json
 {
     "key": {
-        "name": "BFT-MVBA",
+        "name": "CKPS",
         "path": "/root/.ssh/id_rsa",
         "accesskey": "/root/.aliyun/access.json"
     },
     "ports": {
-        "consensus": 8000
+        "consensus": 8000,
+        "mempool": 7000
     },
     "instances": {
         "type": "ecs.g6e.xlarge",
@@ -113,7 +115,7 @@ The first block (`key`) contains information regarding your SSH key and Access K
 
 ```json
 "key": {
-    "name": "BFT-MVBA",
+    "name": "CKPS",
     "path": "/root/.ssh/id_rsa",
     "accesskey": "/root/.aliyun/access.json"
 }
@@ -123,7 +125,8 @@ The second block (`ports`) specifies the TCP ports to use:
 
 ```json
 "ports": {
-    "consensus": 8000
+    "consensus": 8000,
+    "mempool": 7000
 }
 ```
 
@@ -169,7 +172,7 @@ You can then install goland on the remote instances with `fab install`:
 $ fab install
 
 Installing rust and cloning the repo...
-Initialized testbed of 10 nodes
+Initialized testbed of 8 nodes
 ```
 
 Next,you should upload the executable file
