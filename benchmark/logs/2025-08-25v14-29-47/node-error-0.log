@@ -1,0 +1,2 @@
+[ERROR] 2025/08/25 14:30:10.621729 core.go:253: proposal 1 checkreferrence error and try to retriver Author 2 Epoch 179 lenof Reference 5
+[ERROR] 2025/08/25 14:30:10.637972 synchronizer.go:132: successfully get the ask block

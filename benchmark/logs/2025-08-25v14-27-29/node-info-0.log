@@ -1,0 +1,15 @@
+panic: json: cannot unmarshal array into Go struct field Parameters.pool.rate of type int
+
+goroutine 1 [running]:
+main.main.func3(0xc0000c8300?, {0x74cad0?, 0x4?, 0x74cad4?})
+	/root/code/TockOwl/Mempool-TockOwl/mempool/CKPS/two-ports/main.go:84 +0x156
+github.com/spf13/cobra.(*Command).execute(0xc000005200, {0xc0000c8f00, 0x10, 0x10})
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.8.1/command.go:989 +0xaa3
+github.com/spf13/cobra.(*Command).ExecuteC(0xc000004900)
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.8.1/command.go:1117 +0x3ff
+github.com/spf13/cobra.(*Command).ExecuteC(0xc000004900?)
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.8.1/command.go:1061 +0x5f6
+github.com/spf13/cobra.(*Command).Execute(...)
+	/root/go/pkg/mod/github.com/spf13/cobra@v1.8.1/command.go:1041
+main.main()
+	/root/code/TockOwl/Mempool-TockOwl/mempool/CKPS/two-ports/main.go:91 +0x599

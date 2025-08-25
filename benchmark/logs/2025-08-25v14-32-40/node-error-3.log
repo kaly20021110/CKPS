@@ -1,0 +1,13 @@
+[ERROR] 2025/08/25 14:32:58.969080 core.go:253: proposal 1 checkreferrence error and try to retriver Author 2 Epoch 116 lenof Reference 7
+[ERROR] 2025/08/25 14:32:58.982466 synchronizer.go:132: successfully get the ask block
+[ERROR] 2025/08/25 14:33:02.293059 core.go:253: proposal 1 checkreferrence error and try to retriver Author 0 Epoch 135 lenof Reference 4
+[ERROR] 2025/08/25 14:33:02.304475 synchronizer.go:132: successfully get the ask block
+[ERROR] 2025/08/25 14:33:04.125412 core.go:253: proposal 1 checkreferrence error and try to retriver Author 1 Epoch 145 lenof Reference 5
+[ERROR] 2025/08/25 14:33:04.133749 synchronizer.go:132: successfully get the ask block
+[ERROR] 2025/08/25 14:33:09.060233 core.go:253: proposal 1 checkreferrence error and try to retriver Author 0 Epoch 186 lenof Reference 6
+[ERROR] 2025/08/25 14:33:09.070240 synchronizer.go:132: successfully get the ask block
+[ERROR] 2025/08/25 14:33:09.531174 core.go:253: proposal 1 checkreferrence error and try to retriver Author 1 Epoch 187 lenof Reference 10
+[ERROR] 2025/08/25 14:33:09.556051 synchronizer.go:132: successfully get the ask block
+[ERROR] 2025/08/25 14:33:23.110739 core.go:253: proposal 1 checkreferrence error and try to retriver Author 0 Epoch 281 lenof Reference 3
+[ERROR] 2025/08/25 14:33:23.116535 synchronizer.go:132: successfully get the ask block
+[ERROR] 2025/08/25 14:33:23.881408 codec.go:40: Codec encode typeId  2 error: write tcp 127.0.0.1:33322->127.0.0.1:6000: write: connection reset by peer 

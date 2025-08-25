@@ -1,0 +1,21 @@
+
+-----------------------------------------
+ SUMMARY:
+-----------------------------------------
+ + CONFIG:
+ Protocol: sMVBA 
+ DDOS attack: False 
+ Committee size: 4 nodes
+ Input rate: 5,000 tx/s
+ Transaction size: 256 B
+ Batch size: 512 tx/Batch
+ Faults: 0 nodes
+ Execution time: 40 s
+
+ + RESULTS:
+ Consensus TPS: 18,666 tx/s
+ Consensus latency: 131 ms
+
+ End-to-end TPS: 18,733 tx/s
+ End-to-end latency: 232 ms
+-----------------------------------------

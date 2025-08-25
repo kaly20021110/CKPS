@@ -1,0 +1,20 @@
+[WARN] 2025/08/25 14:29:51.463825 synchronizer.go:166: missing length is 1
+[WARN] 2025/08/25 14:29:51.463868 store.go:77: len of pending queue of payload req.key is 1
+[WARN] 2025/08/25 14:29:52.402385 core.go:577: vote check error epoch 20 round 0 author 2 leader 3
+[WARN] 2025/08/25 14:29:53.057112 core.go:577: vote check error epoch 25 round 0 author 2 leader 1
+[WARN] 2025/08/25 14:30:03.504325 core.go:577: vote check error epoch 122 round 0 author 2 leader 0
+[WARN] 2025/08/25 14:30:06.457035 core.go:577: vote check error epoch 146 round 0 author 2 leader 3
+[WARN] 2025/08/25 14:30:10.782591 core.go:577: vote check error epoch 180 round 0 author 2 leader 0
+[WARN] 2025/08/25 14:30:11.081850 core.go:577: vote check error epoch 182 round 0 author 2 leader 1
+[WARN] 2025/08/25 14:30:13.767342 synchronizer.go:166: missing length is 1
+[WARN] 2025/08/25 14:30:13.767380 store.go:77: len of pending queue of payload req.key is 1
+[WARN] 2025/08/25 14:30:14.376911 core.go:577: vote check error epoch 204 round 0 author 2 leader 3
+[WARN] 2025/08/25 14:30:16.010848 core.go:577: vote check error epoch 220 round 0 author 2 leader 0
+[WARN] 2025/08/25 14:30:17.154392 core.go:577: vote check error epoch 226 round 0 author 2 leader 0
+[WARN] 2025/08/25 14:30:20.430745 core.go:577: vote check error epoch 256 round 0 author 2 leader 1
+[WARN] 2025/08/25 14:30:23.062688 core.go:577: vote check error epoch 278 round 0 author 2 leader 1
+[WARN] 2025/08/25 14:30:23.574003 core.go:577: vote check error epoch 282 round 0 author 2 leader 3
+[WARN] 2025/08/25 14:30:28.119754 synchronizer.go:166: missing length is 1
+[WARN] 2025/08/25 14:30:28.119806 store.go:77: len of pending queue of payload req.key is 1
+[WARN] 2025/08/25 14:30:28.166680 core.go:577: vote check error epoch 315 round 0 author 2 leader 1
+[WARN] 2025/08/25 14:30:29.576798 core.go:577: vote check error epoch 325 round 0 author 2 leader 3
