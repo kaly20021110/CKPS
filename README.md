@@ -9,7 +9,7 @@ This repo provides a minimal implementation of the CKPS protocol. The codebase h
 
 ## Quick Start
 
-lightDAG is written in Golang, but all benchmarking scripts are written in Python and run with Fabric. To deploy and benchmark a testbed of 4 nodes on your local machine, clone the repo and install the python dependencies:
+CKPS is written in Golang, but all benchmarking scripts are written in Python and run with Fabric. To deploy and benchmark a testbed of 4 nodes on your local machine, clone the repo and install the python dependencies:
 
 ```shell
 git clone https://github.com/kaly20021110/CKPS.git
@@ -78,7 +78,7 @@ Set up your Aliyun credentials to enable programmatic access to your account fro
 
 **2.  Add your SSH public key to your Aliyun account**
 
-You must now [add your SSH public key to your Aliyun account](https://help.aliyun.com/document_detail/201472.html). This operation is manual and needs to be repeated for each Aliyun region that you plan to use. Upon importing your key, Aliyun requires you to choose a 'name' for your key; ensure you set the same name on all Aliyun regions. This SSH key will be used by the python scripts to execute commands and upload/download files to your Aliyun instances. If you don't have an SSH key, you can create one using [ssh-keygen](https://www.ssh.com/ssh/keygen/):
+You must now [add your SSH public key to your Aliyun account](https://www.alibabacloud.com/help/en/yunxiao/user-guide/configure-ssh-key). This operation is manual and needs to be repeated for each Aliyun region that you plan to use. Upon importing your key, Aliyun requires you to choose a 'name' for your key; ensure you set the same name on all Aliyun regions. This SSH key will be used by the python scripts to execute commands and upload/download files to your Aliyun instances. If you don't have an SSH key, you can create one using [ssh-keygen](https://www.ssh.com/ssh/keygen/):
 
 ```
 ssh-keygen -f ~/.ssh/Aliyun
@@ -86,7 +86,7 @@ ssh-keygen -f ~/.ssh/Aliyun
 
 **3. Configure the testbed**
 
-The file [settings.json](https://github.com/asonnino/hotstuff/blob/main/benchmark/settings.json) located in [BFT-MVBA/benchmark](https://github.com/ac-dcz/BFT-MVBA/tree/main/benchmark) contains all the configuration parameters of the testbed to deploy. Its content looks as follows:
+The file [settings.json](https://github.com/asonnino/hotstuff/blob/main/benchmark/settings.json) located in [CKPS/benchmark](https://github.com/kaly20021110/CKPS/benchmark) contains all the configuration parameters of the testbed to deploy. Its content looks as follows:
 
 ```json
 {
