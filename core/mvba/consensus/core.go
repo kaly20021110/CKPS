@@ -206,7 +206,6 @@ func (c *Core) generateBlock(epoch int64) *ConsensusBlock {
 	return consensusblock
 }
 
-// 检查当前区块的所有payload是否都已经收到
 func (c *Core) verifyConsensusBlock(block *ConsensusBlock) bool {
 	logger.Debug.Printf("verify times epoch %d\n", block.Epoch)
 	verifychan := make(chan mempool.VerifyStatus)
@@ -492,7 +491,7 @@ func (c *Core) handleLoopBack(blockhash crypto.Digest) error {
 				c.Commitor.Commit(proposal.Epoch, proposal.Author, proposal.B)
 			}
 		}
-		if block.Epoch >= c.Epoch { //如果已经进入下一轮就没必要再处理这个方案了
+		if block.Epoch >= c.Epoch {
 			go c.getCBCInstance(proposal.Epoch, proposal.Author, DATA_CBC).ProcessProposal(proposal)
 		}
 	}
